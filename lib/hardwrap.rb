@@ -36,7 +36,8 @@ body = lines.join(' ').gsub(/\s+/, ' ')
 wrapped_lines = []
 while body.length > 0
   lin = body.truncate width, separator: delimiter, omission: ''
-  wrapped_lines << (prefix_str + lin.strip)
+  prefix_to_restore = prefix_str || ''
+  wrapped_lines << (prefix_to_restore + lin.strip)
   body.slice!(0, lin.length)
 end
 
