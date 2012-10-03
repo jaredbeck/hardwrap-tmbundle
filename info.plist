@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Hardwrap</string>
+	<key>ordering</key>
+	<array>
+		<string>69C6DFA6-0C3E-4C33-83E9-CDDA9CD4CD9D</string>
+	</array>
+	<key>uuid</key>
+	<string>625CC2DA-21DF-409B-BADC-13268F909A50</string>
+</dict>
+</plist>
