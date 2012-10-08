@@ -3,18 +3,16 @@ Why
 
 You use textmate and you want to change this *long* line:
 
-    # Irony lo-fi 3 wolf moon, pitchfork +1 wayfarers bespoke mustache retro wolf kale chips direct trade keytar. Pop-up synth wolf, bespoke viral cosby sweater farm-to-table messenger bag typewriter you probably haven't heard of them bicycle rights scenester fingerstache blog.
+    # Irony lo-fi 3 wolf moon, pitchfork +1 wayfarers bespoke mustache retro wolf kale chips direct trade keytar.
 
 to this:
 
-    # Irony lo-fi 3 wolf moon, pitchfork +1 wayfarers bespoke mustache
-    # retro wolf kale chips direct trade keytar. Pop-up synth wolf,
-    # bespoke viral cosby sweater farm-to-table messenger bag
-    # typewriter you probably haven't heard of them bicycle rights
-    # scenester fingerstache blog.
+    # Irony lo-fi 3 wolf moon, pitchfork +1 wayfarers bespoke
+    # mustache retro wolf kale chips direct trade keytar.
 
-You also want to do the same with doubleslash (`//`), multiline
-slashstar, or any level of nested email quoting (`>`).
+You also want to do the same with other prefixes, like
+doubleslash (`//`), multiline slashstar, or any level of nested
+email quoting (`>`).
 
 Install
 =======
@@ -25,11 +23,11 @@ to submit a pull request.
     rvm use 1.9.3
     gem install activesupport
 
-    tmbundles='~/Library/Application\ Support/TextMate/Bundles'
-    githardwrap='git://github.com/jaredbeck/hardwrap-tmbundle.git'
-
+    tmbundles="$HOME/Library/Application Support/TextMate/Bundles"
     mkdir -p $tmbundles
     cd $tmbundles
 
+    githardwrap='git://github.com/jaredbeck/hardwrap-tmbundle.git'
     git clone $githardwrap "Hardwrap.tmbundle"
+
     osascript -e 'tell app "TextMate" to reload bundles'
