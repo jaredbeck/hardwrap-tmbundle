@@ -24,8 +24,8 @@ to submit a pull request.
     gem install activesupport
 
     tmbundles="$HOME/Library/Application Support/TextMate/Bundles"
-    mkdir -p $tmbundles
-    cd $tmbundles
+    mkdir -p "$tmbundles"
+    cd "$tmbundles"
 
     githardwrap='git://github.com/jaredbeck/hardwrap-tmbundle.git'
     git clone $githardwrap "Hardwrap.tmbundle"
