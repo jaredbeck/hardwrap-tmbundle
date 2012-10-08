@@ -16,8 +16,6 @@ ruby ~/Library/Application\ Support/TextMate/Bundles/Hardwrap.tmbundle/lib/hardw
 </string>
 	<key>input</key>
 	<string>selection</string>
-	<key>keyEquivalent</key>
-	<string>^w</string>
 	<key>name</key>
 	<string>Hardwrap with prefix</string>
 	<key>output</key>
