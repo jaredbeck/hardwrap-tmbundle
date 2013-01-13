@@ -6,12 +6,9 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/bash
-
-# bring in rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] &amp;&amp; source "$HOME/.rvm/scripts/rvm"
-
-rvm use 1.9.3 &gt; /dev/null
-
+set -e
+source ~/.profile
+rbenv shell 1.9.3-p327
 ruby ~/Library/Application\ Support/TextMate/Bundles/Hardwrap.tmbundle/lib/hardwrap.rb
 </string>
 	<key>input</key>

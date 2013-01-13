@@ -17,10 +17,13 @@ email quoting (`>`).
 Install
 =======
 
-Sorry, but for now you need `rvm`.  I know that's silly.  Feel free
-to submit a pull request.
+Sorry, but for now you need `rbenv` and a very specific ruby.
+I know that's silly.  Feel free to submit a pull request.
 
-    rvm use 1.9.3
+    brew install rbenv
+    brew install ruby-build
+    rbenv install 1.9.3-p327
+    rbenv rehash
     gem install activesupport
 
     tmbundles="$HOME/Library/Application Support/TextMate/Bundles"
